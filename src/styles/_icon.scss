@@ -1,0 +1,14 @@
+.app-icon {
+  display: inline-block;
+  flex: 0 0 auto;
+  vertical-align: text-bottom;
+}
+.app-icon-interactive {
+  cursor: pointer;
+  &:active {
+    --app-icon-color: var(--app-icon-color-active);
+  }
+  &:hover {
+    --app-icon-color: var(--app-icon-color-hover);
+  }
+}

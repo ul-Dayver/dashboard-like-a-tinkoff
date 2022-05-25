@@ -1,0 +1,32 @@
+.app-profile-bar {
+  background: rgba(var(--app-base-01),1);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  flex-shrink: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.app-profile-bar-container {
+  align-items: center;
+  background: rgba(var(--app-base-01),1);
+  border-top: 1px solid rgba(var(--app-base-03),1);
+  display: flex;
+  height: 32px;
+  position: relative;
+}
+.app-profile-bar-btts {
+  align-items: center;
+  background: rgba(var(--app-base-01),1);
+  display: flex;
+  position: absolute;
+  right: 12px;
+  white-space: nowrap;
+}
+.app-profile-bar-separator {
+  background-color: rgba(var(--app-base-03),1);
+  height: 16px!important;
+  margin: 0 12px;
+  width: 1px;
+}

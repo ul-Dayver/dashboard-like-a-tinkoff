@@ -1,0 +1,33 @@
+.app-core-dashboard-tabs-scroll-bttn {
+  --app-icon-color: var(--app-core-dashboard-border-color);
+  --app-icon-hover-color: var(--app-icons-secondary);
+  --app-icon-transition: fill 0.3s;
+
+  height: 30px;
+  padding: 0 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--app-core-dashboard-tabs-bg);
+
+  position: absolute;
+  z-index: 2;
+
+  &_left{
+    left: 0;
+  }
+
+  &_right{
+    right: 32px;
+  }
+
+  &:hover {
+    --app-icon-color: var(--app-icon-hover-color);
+  }
+}
+
+.app-core-dashboard-tabs-group {
+  display: flex;
+  position: relative;
+}

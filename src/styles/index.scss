@@ -1,0 +1,14 @@
+:root {
+  --chart-max-width: 1000px;
+  --bullet: "\2022";
+}
+@import "variables";
+@import "./theme/dark";
+@import "./theme/light";
+:root {
+  --text-green-color: rgba(var(--app-positive),1);
+  --text-red-color: rgba(var(--app-base-red),1);
+}
+
+@import "./base";
+@import "./icon";

@@ -1,0 +1,66 @@
+.app-core-dashboard-area {
+  flex: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.app-core-dashboard-area-space {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+  width: 100%; 
+}
+
+.app-core-dashboard-area-scroll {
+  --app-core-dashboard-area-margin-bottom: -20px;
+  overflow: scroll;
+  position: absolute;
+
+  height: auto!important;
+  padding-bottom: 0!important;
+  padding-right: 0!important;
+  top: 1px!important;
+  bottom: 0!important;
+  left: 1px!important;
+  right: 1px!important;
+  
+  margin-bottom: var(--app-core-dashboard-area-margin-bottom)!important;
+  margin-right: var(--app-core-dashboard-area-margin-bottom)!important;
+  
+  --scrollbar-width: 10px;
+  --scrollbars-bg-color: 0,0,0;
+  --scrollbars-bg-opacity: 0;
+  --scrollbars-thumb-color: var(--app-text-color);
+  --scrollbars-thumb-opacity: 0.2;
+  --scrollbars-thumb-hover-opacity: 0.32;
+  --scrollbars-thumb-active-opacity: 0.56;
+
+  &::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+    background: rgba(var(--scrollbars-bg-color),var(--scrollbars-bg-opacity));
+    cursor: pointer;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    visibility: hidden;
+    border: 2px solid transparent;
+    background-color: rgba(var(--scrollbars-thumb-color),var(--scrollbars-thumb-opacity));
+    background-clip: padding-box;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: background-color .2s ease-in;
+    transition: background-color .2s ease-in;
+    
+    &:hover {
+        visibility: visible;
+        background-color: rgba(var(--scrollbars-thumb-color),var(--scrollbars-thumb-hover-opacity));
+    }
+    
+    &:active {
+        visibility: visible;
+        background-color: rgba(var(--scrollbars-thumb-color),var(--scrollbars-thumb-active-opacity));
+    }
+  }
+}

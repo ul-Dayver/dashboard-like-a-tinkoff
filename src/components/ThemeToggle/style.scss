@@ -1,0 +1,8 @@
+.theme-toggle-bttn {
+  display: flex;
+  cursor: pointer;
+  color: rgba(var(--app-text-02),1);
+  -webkit-user-select: none;
+  user-select: none;
+  align-items: center;
+}

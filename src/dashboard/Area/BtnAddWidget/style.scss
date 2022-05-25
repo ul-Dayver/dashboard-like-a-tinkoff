@@ -1,0 +1,24 @@
+.app-core-dashboard-addwidget {
+  height: 24px;
+  margin-top: 8px;
+  position: absolute!important;
+  right: 8px;
+  transition: right .15s ease-out;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.app-core-dashboard-addwidget-bttn {
+  display: flex;
+  cursor: pointer;
+  color: rgba(var(--app-text-02),1);
+  -webkit-user-select: none;
+  user-select: none;
+  &:hover {
+    --app-icon-color: var(--app-icon-color-hover);
+    color: rgba(var(--app-text-color),1);
+  }
+  & svg {
+    margin-right: 8px;
+  }
+}

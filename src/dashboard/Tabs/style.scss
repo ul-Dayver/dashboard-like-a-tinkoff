@@ -1,0 +1,39 @@
+[data-theme],html {
+  --app-core-dashboard-tabs-bg: rgba(var(--app-base-01),1);
+  --app-core-dashboard-border-color: var(--app-base-03);
+}
+.app-core-dashboard-tabs {
+  display: flex;
+  flex-direction: row;
+  background: var(--app-core-dashboard-tabs-bg);
+  border-top: 1px solid rgba(var(--app-core-dashboard-border-color),1);
+  border-bottom: 1px solid rgba(var(--app-widget-body-border-color),1);
+  box-shadow: var(--app-elevation-shadow-1);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.app-core-dashboard-tabs-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: auto;
+  max-width: calc(100% - 150px);
+}
+
+.app-core-dashboard-tabs-panel {
+  display: flex;
+  overflow: hidden;
+  width: calc(100% - 32px);
+}
+
+.app-core-dashboard-tabs-addbttn {
+  flex: none;
+  height: 30px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

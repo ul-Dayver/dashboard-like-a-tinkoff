@@ -1,0 +1,48 @@
+[data-theme],html {
+  --app-text-color: var(--app-text-01);
+  --app-text-muted-color: var(--app-text-04);
+  --app-text-disabled-color: rgba(var(--app-text-color),var(--app-disabled-opacity));
+  --app-heading-color: var(--app-text-color);
+  --app-link-color: var(--app-link);
+  --app-link-hover-color: var(--app-link-hover);
+  --app-text-selection-color: var(--app-base-primary);
+  --app-outline-color: var(--app-blue-3);
+  --app-icon-color: var(--app-icons-secondary);
+  --app-icon-color-hover: var(--app-icons-secondary-hover);
+  --app-icon-color-active: var(--app-icons-secondary-active);
+  --app-icon-marker-bg: var(--app-icons-marker-1);
+  --app-icon-marker-color: var(--app-icons-marker-2);
+  --app-root-background-color: var(--app-base-00);
+  --app-footer-height: 24px;
+}
+
+body {
+  user-select: none;
+  font-size: 13px;
+  overflow: hidden;
+
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.23077;
+  text-transform: none;
+  color: rgba(var(--app-text-color),1);
+  font-family: var(--app-font-family);
+
+  position:relative;
+  height: 100vh;
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+}
+#root {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: rgba(var(--app-root-background-color),1);
+}
+footer {
+  height: var(--app-footer-height);
+  background: rgba(var(--app-base-01),1)
+}

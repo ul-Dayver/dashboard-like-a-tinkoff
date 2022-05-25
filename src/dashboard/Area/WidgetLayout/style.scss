@@ -1,0 +1,77 @@
+html {
+  --app-widget-layout-wrapper-border-color: var(--app-base-00);
+  --app-widget-layout-wrapper-separator: var(--app-base-03);
+  --app-widget-layout-wrapper-bg: var(--app-dark-gray-3);
+  --app-widget-header-icon-color: var(--app-gray-4);
+  --app-widget-header-icon-color-hover: var(--app-gray-6);
+}
+
+.app-widget-layout {
+  background: rgba(var(--app-widget-layout-wrapper-bg),1);
+  box-shadow: var(--app-elevation-shadow-1);
+  color: rgba(var(--app-text-02),1);
+  border: 1px solid rgba(var(--app-widget-layout-wrapper-border-color),1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100%  - 2px + var(--app-core-dashboard-area-margin-bottom) / 2);
+  width: calc(100%  - 2px + var(--app-core-dashboard-area-margin-bottom) / 2);
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: none;
+  position: relative;
+  z-index: 10;
+}
+
+.app-widget-layout-header {
+  background: inherit;
+  border-bottom: 1px solid rgba(var(--app-widget-layout-wrapper-separator),1);
+  display: flex;
+  flex-shrink: 0;
+  height: 25px;
+  justify-content: space-between;
+  -webkit-user-select: none;
+  user-select: none;
+  --app-icon-color: var(--app-widget-header-icon-color);
+
+  .app-icon-interactive:hover {
+    --app-icon-color: var(--app-widget-header-icon-color-hover);
+  }
+}
+.app-changeable-view .app-widget-layout-header {
+  cursor: move;
+}
+
+.app-widget-layout-header-title {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  flex-grow: 1;
+  overflow: hidden;
+  padding-left: 6px;
+}
+.app-widget-layout-header-toolbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+.app-widget-layout-header-bttn {
+  height: 100%;
+  width: 20px;
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+  transition: color .12s ease-out;
+  color: rgba(var(--app-text-02),1);
+  cursor: pointer;
+}
+.app-widget-layout-body {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+}

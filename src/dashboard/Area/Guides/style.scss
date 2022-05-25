@@ -1,0 +1,13 @@
+.guide-horizontal, .guide-vertical {
+  position: absolute;
+  z-index: 1000;
+  border:0px dashed rgb(var(--app-base-primary));;
+}
+
+.guide-horizontal {
+  border-bottom-width: 1px;
+}
+
+.guide-vertical {
+  border-left-width: 1px;
+}

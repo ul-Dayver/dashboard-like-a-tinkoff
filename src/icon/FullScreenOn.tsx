@@ -1,0 +1,6 @@
+import React from "react"
+import LayoutIcon from "./Layout"
+
+export default function Icon() {
+  return <LayoutIcon>M10 5H6C5.44772 5 5 5.44772 5 6V10C5 10.5523 5.44772 11 6 11H10C10.5523 11 11 10.5523 11 10V6C11 5.44772 10.5523 5 10 5ZM6 3C4.34315 3 3 4.34315 3 6V10C3 11.6569 4.34315 13 6 13H10C11.6569 13 13 11.6569 13 10V6C13 4.34315 11.6569 3 10 3H6Z</LayoutIcon>
+}

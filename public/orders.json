@@ -1,0 +1,26 @@
+[
+ {"uid": 1, "address": "пл. Ленина, 1, Ульяновск, Ульяновская обл., 432063", "amount": "15199.99", "counterparty": "lenin.vv@mail.ru",
+  "items": [
+    {"uid":1, "title": "Диван \"Малышь\"", "qty": "1", "price": "14700", "amount": "14700"},
+    {"uid":2, "title": "Покрывало", "qty": "1", "price": "499.99", "amount": "499.99"}
+  ]
+ },
+ {"uid": 2, "address": "пл. Ленина, 1, Ульяновск, Ульяновская обл., 432063", "amount": "15199.99", "counterparty": "lenin.vv@mail.ru",
+    "items": [
+      {"uid":1, "title": "Диван \"Малышь\"", "qty": "1", "price": "14700", "amount": "14700"},
+      {"uid":2, "title": "Покрывало", "qty": "1", "price": "499.99", "amount": "499.99"}
+    ]
+  },
+  {"uid": 3, "address": "пл. Ленина, 1, Ульяновск, Ульяновская обл., 432063", "amount": "15199.99", "counterparty": "lenin.vv@mail.ru",
+     "items": [
+       {"uid":1, "title": "Диван \"Малышь\"", "qty": "1", "price": "14700", "amount": "14700"},
+       {"uid":2, "title": "Покрывало", "qty": "1", "price": "499.99", "amount": "499.99"}
+     ]
+   },
+   {"uid": 4, "address": "пл. Ленина, 1, Ульяновск, Ульяновская обл., 432063", "amount": "15199.99", "counterparty": "lenin.vv@mail.ru",
+      "items": [
+        {"uid":1, "title": "Диван \"Малышь\"", "qty": "1", "price": "14700", "amount": "14700"},
+        {"uid":2, "title": "Покрывало", "qty": "1", "price": "499.99", "amount": "499.99"}
+      ]
+    }
+]

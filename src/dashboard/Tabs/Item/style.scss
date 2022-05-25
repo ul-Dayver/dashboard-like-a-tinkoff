@@ -1,0 +1,70 @@
+[data-theme],html {
+  --app-core-dashboard-tab-bg: var(--app-elevation-1);
+  --app-core-dashboard-tab-default-color: var(--app-text-04);
+  --app-core-dashboard-tab-hover-color: var(--app-text-01);
+  --app-core-dashboard-tab-icon-color: var(--app-base-03);
+  --app-core-dashboard-tab-icon-hover-color: var(--app-icons-secondary)
+}
+
+.app-core-dashboard-tab {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 8px;
+  cursor: pointer!important;
+  color: rgba(var(--app-core-dashboard-tab-default-color),1);
+  background: rgba(var(--app-core-dashboard-tab-bg),1);
+  margin-right: 1px;
+  outline: none;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: color .3s;
+  width: 140px;
+  max-width: 140px;
+
+  &_active {
+    color: rgba(var(--app-core-dashboard-tab-hover-color),1);
+  }
+
+  &:hover {
+    color: rgba(var(--app-core-dashboard-tab-hover-color),1);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 7px;
+    bottom: 7px;
+    background: rgba(var(--app-core-dashboard-tab-icon-color),1);
+    right: -1px;
+  }
+}
+
+.app-core-dashboard-tab-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.app-core-dashboard-tab-clsbttn {
+  --app-icon-color: var(--app-core-dashboard-tab-icon-color);
+  --app-icon-color-hover: var(--app-core-dashboard-tab-icon-hover-color);
+  --app-icon-transition: fill 0.3s;
+  position: absolute;
+  right: 10px;
+  background: rgba(var(--app-core-dashboard-tab-bg),1);
+  &::before {
+    left: 0;
+    transform: translateX(-100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 16px;
+    background: linear-gradient(270deg,rgba(var(--app-core-dashboard-tab-bg),1),rgba(var(--app-core-dashboard-tab-bg),0));
+    pointer-events: none;
+  }
+}
